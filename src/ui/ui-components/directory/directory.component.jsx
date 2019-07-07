@@ -15,14 +15,12 @@ export  default class Directory extends React.Component{
 	}
 
 	renderMenuItems = () => {
-		return this.state.sections.map((section,index)=>{
+		return this.state.sections.map(({id,...otherSectionProps},index)=>{
 
 			return (
 					<MenuItem 
-					key={section.id} 
-					title={section.title}
-					imageUrl={section.imageUrl}
-					size={section.size}
+					key={ id} 
+					{...otherSectionProps}
 					/>
 				)
 		})	
