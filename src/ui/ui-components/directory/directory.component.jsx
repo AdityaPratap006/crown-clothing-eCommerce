@@ -1,7 +1,6 @@
 import React  from 'react';
 import './directory.styles.scss';
 import sectionData from './directory.data.js';
-
 import MenuItem from '../menu-item/menu-item.component.jsx';
 
 export  default class Directory extends React.Component{
@@ -10,9 +9,14 @@ export  default class Directory extends React.Component{
 		super();
 
 		this.state={
-			sections:sectionData
+			sections: sectionData,
+			
+			
 		}
 	}
+
+	
+	
 
 	renderMenuItems = () => {
 		return this.state.sections.map(({id,...otherSectionProps},index)=>{
