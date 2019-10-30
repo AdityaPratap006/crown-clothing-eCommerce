@@ -8,9 +8,11 @@ import CollectionItem from '../../ui-components/collection-item/collection-item.
 import './collection.styles.scss';
 
 const CollectionPage = ({collection}) => {
+
     
     const {title, items} = collection;
-     
+
+    
     
     return (
 
